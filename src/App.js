@@ -14,6 +14,7 @@ function App() {
     { name: 'food', description: 'Delicious delicacies' },
     { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
   ]);
+
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   const [contactSelected, setContactSelected] = useState(false);
@@ -34,8 +35,8 @@ function App() {
             <About></About>
           </>
         ) : (
-          <ContactForm></ContactForm>
-        )}
+            <ContactForm></ContactForm>
+          )}
       </main>
     </div>
   );
